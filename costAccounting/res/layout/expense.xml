@@ -1,0 +1,169 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_gravity="center_horizontal"
+   		android:background="#6A5ACD"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/bHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="#008B8B"
+            android:text="Home"
+            android:textColor="#E8E8E8"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/bExp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="#008B8B"
+            android:text="Expense"
+            android:textColor="#E8E8E8"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/bInc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="#008B8B"
+            android:text="Income"
+            android:textColor="#E8E8E8"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/bStat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="#008B8B"
+            android:text="Statistics"
+            android:textColor="#E8E8E8"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tVres"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+		android:layout_marginBottom="10dp"
+        android:layout_gravity="center_vertical"
+	    android:background="#B0E2FF"
+        android:text="your daily expense" />
+    
+    <TextView
+        android:id="@+id/tVresView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+		android:layout_marginBottom="10dp"
+        android:layout_gravity="center_vertical"
+	    android:background="#B0E2FF"
+        android:text=" " />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/chsDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose Date" />
+
+            <Button
+                android:id="@+id/chsPeriod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose Period" />
+
+            <Button
+                android:id="@+id/chsCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose Categorie" />
+
+            <TextView
+                android:id="@+id/tVresDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="your period expense" />
+
+            <TextView
+        		android:id="@+id/tVresDateView"
+       			android:layout_width="match_parent"
+       			android:layout_height="match_parent"
+        		android:layout_weight="1"
+        		android:layout_marginTop="10dp"
+				android:layout_marginBottom="10dp"
+        		android:layout_gravity="center_vertical"
+	    		android:background="#B0E2FF"
+        		android:text=" " />
+        </TableLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:layout_gravity="center_horizontal"
+	    android:background="#B0E2FF"
+	    android:layout_marginTop="60dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/bAddExp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:text="Add Expense" />
+
+        <Button
+            android:id="@+id/bAddInc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:text="Add Income" />
+    </LinearLayout>
+
+</LinearLayout>
